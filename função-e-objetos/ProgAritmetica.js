@@ -1,11 +1,12 @@
-// Calculando a soma dos valores de uma PA *//
-// Explicando as diferenças entre 'const' e 'let' *//
+// function nome() { }
+// const nome = () => 
 
-const valorInicial = 13;
-const razao = 5;
-const quantidade = 5;
-let elemento;
-let soma = 0;
+const pa = ({
+    valorInicial = 13,
+    razao = 5,
+    quantidade = 5}) => {
+    let soma = 0;
+    let elemento;
 
 elemento = valorInicial;
 for (let contador = 0; contador < quantidade; contador++){
@@ -17,3 +18,9 @@ for (let contador = 0; contador < quantidade; contador++){
                         //vai ser novamente somado à variável soma.
 }
     console.log(`Soma = ${soma}`);
+}
+pa({
+    valorInicial: 13,
+    razao: 5,
+    quantidade: 5
+});
