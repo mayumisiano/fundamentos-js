@@ -6,8 +6,12 @@
 function contemNumero(array, numero) {
     for(var i = 0; i < array.length; i++){
         if(array[i]==numero){
-            console.log('Contém o número')
+            console.log(array + ' ' + 'contém o número' + ' ' + numero);
+        }else{
+            console.log(array + ' ' +  'não contém o número' + ' ' + numero);
         }
     }
 }
-contemNumero([1,5,4,8,9,6], 2)
+
+contemNumero([1,2,5,4,8,9,6], 2)
+
